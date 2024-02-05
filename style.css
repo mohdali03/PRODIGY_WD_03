@@ -1,0 +1,198 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(190, 190, 190);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 150px;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 400px;
+    padding: 40px;
+    background-color: rgb(240, 240, 240);
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.game-board {
+    display: inline-block;
+    margin: 20px;   
+}
+
+.game-section {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.winner-text {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+#restartButton {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: rgb(90, 90, 90);
+    color: rgb(240, 240, 240);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.vs-button button {
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 20px 0 20px;
+    cursor: pointer;
+}
+
+.vs-button button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(90, 90, 90);
+    border: none;
+} */
+
+@import url('https://fonts.apis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 400px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #007bff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.game-board {
+  display: block;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.game-section {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.3px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #f5f5f5;
+}
+
+.cell.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.winner-text {
+  font-size: 24px;
+  margin-top: 30px;
+  color: #007bff;
+}
+
+#restartButton {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #2335f1;
+  color: #f0f0f0;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#restartButton:hover {
+  background-color: #0520a3;
+  color: #fff;
+}
+
+.vs-button button {
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px 20px 0 20px;
+  cursor: pointer;
+  background-color: #5a5a5a;
+  color: #f0f0f0;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.vs-button button:hover {
+  background-color: #3c3c3c;
+  color: #fff;
+}
